@@ -119,11 +119,20 @@ desktop.ini
 *.bak
 *.swp
 
-# Local data files (keep structure but not actual data)
-karma-hello-agent/logs/*/*.txt
-!karma-hello-agent/logs/.gitkeep
-abracadabra-agent/transcripts/*/*
-!abracadabra-agent/transcripts/.gitkeep
+# Local data files - ONLY commit 20251021 folders for demo/testing
+# Ignore all date folders in karma-hello-agent/logs/ except 20251021
+karma-hello-agent/logs/*/
+!karma-hello-agent/logs/20251021/
+
+# Ignore all date folders in abracadabra-agent/transcripts/ except 20251021
+abracadabra-agent/transcripts/*/
+!abracadabra-agent/transcripts/20251021/
+
+# But still ignore large media files inside 20251021
+karma-hello-agent/logs/20251021/*.mp3
+abracadabra-agent/transcripts/20251021/*/*.mp3
+abracadabra-agent/transcripts/20251021/*/*.mp4
+abracadabra-agent/transcripts/20251021/*/*.wav
 
 # Large files
 *.mp3

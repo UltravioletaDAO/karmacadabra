@@ -1,0 +1,31 @@
+Scene 4 Context:
+
+Previous scene context:
+**Scene 3 Prompt:**
+
+The scene opens with a full-body shot of 0xultravioleta, standing resolute in the mystical void. The camera, maintaining a slightly upward angle, captures the ethereal atmosphere as a vibrant, violet-blue mist swirls at their feet. The orchestral score swells softly, infused with the hum of charged energy.
+
+As the camera smoothly zooms in, focusing on the intricate runes within the luminous circle behind their head, the magical energy intensifies. White-blue rays pulse from the circle, converging in their upturned palms, casting dynamic shadows on their layered tunic. The dark overshirt contrasts elegantly with the glowing undertunic.
+
+The scene transitions with a dramatic flare of light from the circle, illuminating the runes in an electric cyan glow. This light engulfs the screen, seamlessly fading to a subtle whisper of wind and the promise of arcane power, connecting to the anticipation built in previous scenes.
+
+Scene before that:
+**Scene 2 Prompt:**
+
+The scene opens with a full-body shot of 0xultravioleta, centered and vertical, standing in an ethereal void. The camera adopts a slightly upward angle, creating an awe-inspiring perspective. The atmosphere is charged with mysticism, enhanced by a volumetric violet and blue mist swirling at their feet. 
+
+As the camera gently circles 0xultravioleta, the lighting shifts to reveal a radiant magical circle hovering behind their head. This circle emits vibrant white-blue rays, sending pulses of energy toward their open, upturned palms. Their layered tunic billows gracefully, the dark overshirt contrasting with the luminous undertunic, creating a hypnotic dance of light and shadow.
+
+A soft orchestral score underpins the scene, punctuated by a distant hum of energy. The camera closes in, capturing the intricate runes within the circle that flicker with an electric cyan glow. In this moment, 0xultravioleta embodies serene control; their face is shadowed by a wide hood, yet their presence radiates authority and wisdom.
+
+The scene concludes with a sudden, dramatic flare of light from the circle, transitioning into a fade-out, seamlessly connecting to the anticipation built in Scene 1.
+
+
+Final Prompt:
+**Scene 4 Prompt:**
+
+The scene opens with 0xultravioleta standing tall, centered in the mystical void. The camera, from a slightly upward angle, captures their full silhouette. The orchestral score swells with a subtle urgency, intertwining with the hum of vibrant energy.
+
+As the camera pans slowly from left to right, the luminous circle behind 0xultravioleta's hooded head emits pulsating white-blue rays. These beams arc gracefully, feeding into their open palms. The violet mist intensifies, swirling at their feet, while the dark overshirt dances against the glowing undertunic.
+
+Suddenly, a burst of electric cyan illuminates the runes, casting intricate patterns in the mist. The scene concludes with a gentle fade to black, the orchestral notes lingering in the air, hinting at the profound power yet to unfold.

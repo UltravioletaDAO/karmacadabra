@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "language": "es",
+    "language_name": "Spanish",
+    "streamer": "0xultravioleta",
+    "video_id": "2597743149",
+    "fecha_stream": "20251021",
+    "fecha_formateada": "21/10/2025",
+    "titulo_stream": "ULTRAVIOLETA DAO FACILITATOR",
+    "twitch_url": "https://www.twitch.tv/videos/2597743149",
+    "fecha_generacion": "2025-10-21T23:57:18.858328",
+    "version": "3.0"
+  },
+  "resumenes": {
+    "web": {
+      "contenido": "En el último stream titulado \"ULTRAVIOLETA DAO FACILITATOR,\" nos sumergimos en un montón de actualizaciones emocionantes y oportunidades para la comunidad UltravioletaDAO. Aquí te contamos lo más importante.\n\n## Conferencia Stable Summit en Buenos Aires\n\nUltravioleta está emocionado por la conferencia global de stablecoins, el Stable Summit, que se llevará a cabo en Buenos Aires. Este evento, respaldado por State Capital y Curve Finance, es una gran oportunidad para conectar con líderes del ecosistema cripto y DeFi. Además, se mencionó la posibilidad de participar en el Universal Staking Day, un evento clave para hablar sobre innovaciones en staking.\n\n## Curso de AI Agents\n\nNuestro anfitrión está metido de lleno en un curso avanzado sobre agentes de inteligencia artificial. Este curso abarca temas como identidad, reputación y comunicación entre agentes, y planea poner en práctica estas habilidades en el Defconnect Trustless Agent Day. Aquí es donde Karma Hello y Ahora Cadabra entran en juego, mostrando aplicaciones prácticas de estas innovaciones.\n\n## Integración de Karma Hello y Ahora Cadabra\n\nUn proyecto que está tomando forma es la integración de Karma Hello y Ahora Cadabra. Karma Hello, que se encarga de analizar y guardar logs de streams, se comunica de manera segura con Ahora Cadabra para intercambiar datos usando el protocolo ERC-8004 y el framework X-402 para micropagos. Esta integración busca cambiar la forma en que interactuamos con los datos en streaming.\n\n## Participación en Eventos Clave\n\nUltravioleta también fue invitado a un panel con Cyber Pisa para discutir sobre cómo construir un futuro compasivo y abundante en América Latina. Además, se habló del hackathon Blockchain Jungle en Costa Rica, que ofrece una plataforma inclusiva para diversos roles, desde desarrollo hasta mercadeo, destacando el uso de AI para superar barreras técnicas.\n\n## Facilitator de X-402\n\nEn el lado técnico, se está trabajando en la configuración de un facilitator del protocolo X-402. Este desarrollo es esencial para procesar micropagos de manera eficiente y descentralizada, abordando necesidades de pagos sin gas con tokens compatibles con ERC-3009 y EIP-2612.\n\n## Conclusión\n\nEste stream resaltó un momento histórico en el que la inteligencia artificial y el cripto están redefiniendo la interacción digital. Con el crecimiento exponencial del protocolo X-402, estamos en el umbral de una nueva era en internet y tecnología blockchain. ¡No te lo pierdas!",
+      "longitud": 2480
+    }
+  }
+}

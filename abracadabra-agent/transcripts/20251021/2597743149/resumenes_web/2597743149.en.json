@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "language": "en",
+    "language_name": "English",
+    "streamer": "0xultravioleta",
+    "video_id": "2597743149",
+    "fecha_stream": "20251021",
+    "fecha_formateada": "21/10/2025",
+    "titulo_stream": "ULTRAVIOLETA DAO FACILITATOR",
+    "twitch_url": "https://www.twitch.tv/videos/2597743149",
+    "fecha_generacion": "2025-10-21T23:57:22.910900",
+    "version": "3.0"
+  },
+  "resumenes": {
+    "web": {
+      "contenido": "In the latest stream titled \"ULTRAVIOLETA DAO FACILITATOR,\" we dived into a bunch of exciting updates and opportunities for the UltravioletaDAO community. Here's the most important information.\n\n## Stable Summit Conference in Buenos Aires\n\nUltravioleta is thrilled about the global stablecoins conference, the Stable Summit, which will take place in Buenos Aires. This event, backed by State Capital and Curve Finance, is a great opportunity to connect with leaders in the crypto and DeFi ecosystem. Additionally, there was mention of the possibility of participating in the Universal Staking Day, a key event to discuss innovations in staking.\n\n## AI Agents Course\n\nOur host is deeply involved in an advanced course on artificial intelligence agents. This course covers topics such as identity, reputation, and communication between agents, and plans to put these skills into practice at the Defconnect Trustless Agent Day. This is where Karma Hello and Ahora Cadabra come into play, showcasing practical applications of these innovations.\n\n## Integration of Karma Hello and Ahora Cadabra\n\nA project taking shape is the integration of Karma Hello and Ahora Cadabra. Karma Hello, which is responsible for analyzing and storing stream logs, communicates securely with Ahora Cadabra to exchange data using the ERC-8004 protocol and the X-402 framework for micropayments. This integration aims to change the way we interact with streaming data.\n\n## Participation in Key Events\n\nUltravioleta was also invited to a panel with Cyber Pisa to discuss how to build a compassionate and abundant future in Latin America. Additionally, there was talk of the Blockchain Jungle hackathon in Costa Rica, which offers an inclusive platform for various roles, from development to marketing, highlighting the use of AI to overcome technical barriers.\n\n## X-402 Facilitator\n\nOn the technical side, work is underway on configuring a facilitator for the X-402 protocol. This development is essential for processing micropayments efficiently and in a decentralized manner, addressing gasless payment needs with tokens compatible with ERC-3009 and EIP-2612.\n\n## Conclusion\n\nThis stream highlighted a historic moment where artificial intelligence and crypto are redefining digital interaction. With the exponential growth of the X-402 protocol, we are on the threshold of a new era in the internet and blockchain technology. Don't miss it!",
+      "longitud": 2415
+    }
+  }
+}
