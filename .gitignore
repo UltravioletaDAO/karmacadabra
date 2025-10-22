@@ -6,6 +6,9 @@
 *.env
 *.env.*
 
+# Unused/scratch files
+.unused/
+
 # Python
 __pycache__/
 *.py[cod]
