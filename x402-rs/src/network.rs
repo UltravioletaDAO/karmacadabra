@@ -275,6 +275,46 @@ static USDC_SEI_TESTNET: Lazy<USDCDeployment> = Lazy::new(|| {
     })
 });
 
+/// Lazily initialized UVD V2 deployment on Avalanche Fuji testnet as [`UVDDeployment`].
+/// Note: Address must be updated after deploying erc-20/UVD_V2.sol
+static UVD_AVALANCHE_FUJI: Lazy<UVDDeployment> = Lazy::new(|| {
+    UVDDeployment(TokenDeployment {
+        asset: TokenAsset {
+            // TODO: Update this address after deploying UVD V2 token
+            // See: erc-20/deployment.json after running ./deploy-fuji.sh
+            address: std::env::var("UVD_TOKEN_ADDRESS")
+                .ok()
+                .and_then(|s| s.parse().ok())
+                .map(|addr| MixedAddress::Evm(addr))
+                .unwrap_or_else(|| {
+                    // Default placeholder address (must be replaced)
+                    address!("0x0000000000000000000000000000000000000000").into()
+                }),
+            network: Network::AvalancheFuji,
+        },
+        decimals: 6,
+        eip712: Some(TokenDeploymentEip712 {
+            name: "Ultravioleta DAO Token".into(),
+            version: "2".into(),
+        }),
+    })
+});
+
+/// Lazily initialized WAVAX deployment on Avalanche Fuji testnet as [`WAVAXDeployment`].
+static WAVAX_AVALANCHE_FUJI: Lazy<WAVAXDeployment> = Lazy::new(|| {
+    WAVAXDeployment(TokenDeployment {
+        asset: TokenAsset {
+            address: address!("0xd00ae08403B9bbb9124bB305C09058E32C39A48c").into(),
+            network: Network::AvalancheFuji,
+        },
+        decimals: 18,
+        eip712: Some(TokenDeploymentEip712 {
+            name: "Wrapped AVAX".into(),
+            version: "1".into(),
+        }),
+    })
+});
+
 /// A known USDC deployment as a wrapper around [`TokenDeployment`].
 #[derive(Clone, Debug)]
 pub struct USDCDeployment(pub TokenDeployment);
@@ -322,6 +362,86 @@ impl USDCDeployment {
             Network::Polygon => &USDC_POLYGON,
             Network::Sei => &USDC_SEI,
             Network::SeiTestnet => &USDC_SEI_TESTNET,
+        }
+    }
+}
+
+/// A known UVD (Ultravioleta DAO Token) deployment as a wrapper around [`TokenDeployment`].
+#[derive(Clone, Debug)]
+pub struct UVDDeployment(pub TokenDeployment);
+
+impl Deref for UVDDeployment {
+    type Target = TokenDeployment;
+
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+
+impl From<&UVDDeployment> for TokenDeployment {
+    fn from(deployment: &UVDDeployment) -> Self {
+        deployment.0.clone()
+    }
+}
+
+impl From<UVDDeployment> for Vec<TokenAsset> {
+    fn from(deployment: UVDDeployment) -> Self {
+        vec![deployment.asset.clone()]
+    }
+}
+
+impl From<&UVDDeployment> for Vec<TokenAsset> {
+    fn from(deployment: &UVDDeployment) -> Self {
+        vec![deployment.asset.clone()]
+    }
+}
+
+impl UVDDeployment {
+    /// Return the known UVD deployment for Avalanche Fuji.
+    pub fn by_network<N: Borrow<Network>>(network: N) -> &'static UVDDeployment {
+        match network.borrow() {
+            Network::AvalancheFuji => &UVD_AVALANCHE_FUJI,
+            _ => panic!("UVD token only deployed on Avalanche Fuji testnet"),
+        }
+    }
+}
+
+/// A known WAVAX (Wrapped AVAX) deployment as a wrapper around [`TokenDeployment`].
+#[derive(Clone, Debug)]
+pub struct WAVAXDeployment(pub TokenDeployment);
+
+impl Deref for WAVAXDeployment {
+    type Target = TokenDeployment;
+
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+
+impl From<&WAVAXDeployment> for TokenDeployment {
+    fn from(deployment: &WAVAXDeployment) -> Self {
+        deployment.0.clone()
+    }
+}
+
+impl From<WAVAXDeployment> for Vec<TokenAsset> {
+    fn from(deployment: WAVAXDeployment) -> Self {
+        vec![deployment.asset.clone()]
+    }
+}
+
+impl From<&WAVAXDeployment> for Vec<TokenAsset> {
+    fn from(deployment: &WAVAXDeployment) -> Self {
+        vec![deployment.asset.clone()]
+    }
+}
+
+impl WAVAXDeployment {
+    /// Return the known WAVAX deployment for Avalanche Fuji.
+    pub fn by_network<N: Borrow<Network>>(network: N) -> &'static WAVAXDeployment {
+        match network.borrow() {
+            Network::AvalancheFuji => &WAVAX_AVALANCHE_FUJI,
+            _ => panic!("WAVAX token only deployed on Avalanche Fuji testnet for Karmacadabra"),
         }
     }
 }
