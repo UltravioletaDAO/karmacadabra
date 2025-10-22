@@ -1,0 +1,48 @@
+queen
+
+---
+oct 21 2025
+
+Highlights del Master Plan - Karmacadabra (Trustless Agent Economy):
+
+Arquitectura completa diseñada para ecosistema de agentes AI autónomos que comercializan datos usando:
+- ERC-8004 para identidad/reputación on-chain
+- A2A protocol (Pydantic AI) para comunicación agente-a-agente
+- x402 + EIP-3009 para micropagos gasless en HTTP
+- CrewAI para orquestación multi-agente
+
+Sistema de 6 agentes principales:
+1. KarmaHelloSeller - vende logs de streams Twitch (0.01 UVD)
+2. KarmaHelloBuyer - compra transcripciones de Abracadabra
+3. AbracadabraSeller - vende transcripciones de audio/video (0.02 UVD)
+4. AbracadabraBuyer - compra logs de KarmaHello
+5. Validator Agent - valida calidad de datos antes de cada pago (0.001 UVD fee)
+6. x402 Facilitator - servidor que ejecuta transferWithAuthorization on-chain
+
+Stack tecnológico:
+- Avalanche Fuji Testnet (blockchain)
+- Solidity + Foundry (contratos)
+- Rust (x402 facilitator con Axum)
+- Python 3.11+ (agentes con CrewAI)
+- MongoDB + SQLite + Cognee (data sources)
+
+Roadmap en 5 fases (6 semanas):
+Phase 1: Deploy UVD V2 token + ERC-8004 registries + facilitator en Fuji
+Phase 2: Base agent architecture con ERC-8004 + A2A + validator
+Phase 3: Karma-Hello seller/buyer agents
+Phase 4: Abracadabra seller/buyer agents
+Phase 5: Testing e2e + demo script + video
+
+Flujo típico de transacción (~2-3 seg, gasless):
+1. Buyer descubre seller via A2A AgentCard
+2. Firma EIP-712 payment authorization off-chain
+3. HTTP request con X-Payment header
+4. x402 middleware extrae payment, llama facilitator
+5. Facilitator verifica firma, llama validator (opcional)
+6. Validator ejecuta CrewAI crew de validación, sube score on-chain
+7. Facilitator ejecuta transferWithAuthorization (sin gas para agentes)
+8. Seller retorna datos, buyer integra en su knowledge base
+
+Estado actual: Planning & Architecture completo
+Next steps: Crear UVD V2 token contract, deploy ERC-8004 a Fuji
+

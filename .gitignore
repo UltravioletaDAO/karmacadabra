@@ -1,0 +1,147 @@
+# Environment Variables (CRITICAL - Contains private keys)
+.env
+.env.*
+!.env.example
+!.env.fuji.example
+*.env
+*.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Foundry / Solidity
+cache/
+out/
+broadcast/
+deployments/
+artifacts/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/settings.json
+
+# Logs
+*.log
+logs/
+*.log.*
+app.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Deployment artifacts
+deployment.json
+deployed_addresses.txt
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Operating System
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Local data files (keep structure but not actual data)
+karma-hello-agent/logs/*/*.txt
+!karma-hello-agent/logs/.gitkeep
+abracadabra-agent/transcripts/*/*
+!abracadabra-agent/transcripts/.gitkeep
+
+# Large files
+*.mp3
+*.mp4
+*.wav
+*.avi
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Secrets and credentials
+*secret*
+*credential*
+*private_key*
+keystore/
+
+# OpenAI / API keys
+.openai
+openai_key.txt

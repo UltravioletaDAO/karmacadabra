@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//z/erc8004/erc-8004-example/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
